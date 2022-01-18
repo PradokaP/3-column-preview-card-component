@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+  
+    font-size: 15px;
+}
+:root{
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+
+
+/* ### Neutral */
+
+--trans-white: hsla(0, 0%, 100%, 0.75);
+--very-light-gray: hsl(0, 0%, 95%);
+
+}
+h2{
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display';
+    font-size: 40px;
+}
+p{
+    color: var(--very-light-gray);
+    font-family: 'Lexend Deca';
+}
+.container{
+    /* fit-contet: pra o container adquirir a width do conteudo */
+    width: fit-content;
+    margin: auto;
+}
+.conteudo{
+    display: block;
+    margin: 50px 25px;  
+    max-width: 560px;
+    
+}
+.orange{
+    padding: 50px;
+    text-align: left;
+    background-color: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.blue{
+    padding: 50px;
+    text-align: left;
+    background-color: var(--dark-cyan);
+    
+}
+
+.green{
+    padding: 50px;
+    text-align: left;
+    background-color: var(--very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+button{
+    font-size: 15px;
+    font-family: 'Lexend Deca';
+    outline: none;
+    border: none;
+    background-color: none;
+    margin-top: 16px;
+    padding: 16px 24px;
+    border-radius: 24px;
+    border: 2px solid var(--trans-white);
+    cursor: pointer;
+    transition: all 250ms ease-in;
+}
+
+.botao1{
+    color: var(--bright-orange);
+}
+.botao2{
+    color: var(--dark-cyan);
+}
+.botao3{
+    color: var(--very-dark-cyan);
+}
+button:hover{
+    color: var(--trans-white);
+    border: 2px solid var(--trans-white);
+    
+    background-color: transparent;
+    
+}
+
+@media screen and (min-width:1000px)
+{
+    .conteudo{
+        display: flex;
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    .orange, .green, .blue{
+        border-radius: 0px;
+        width: 200px;
+    }
+    button{
+        margin-top: 40px;
+    }
+}
