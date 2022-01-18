@@ -95,11 +95,18 @@ button:hover{
 
 @media screen and (min-width:1000px)
 {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
     .conteudo{
         display: flex;
         max-width: 100%;
         overflow: hidden;
         border-radius: 8px;
+
     }
     .orange, .green, .blue{
         border-radius: 0px;
